@@ -31,6 +31,7 @@ const LoginForm = () => {
       event.stopPropagation();
     }
 
+    // loginUser function
     try {
       const { data } = await loginUser({
         variables: { ...userFormData },
