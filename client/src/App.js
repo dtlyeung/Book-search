@@ -6,7 +6,7 @@ import Navbar from './components/Navbar';
 
 //import ApolloProvider
 import {
-  AppolloClient,
+  ApolloClient,
   InMemoryCache,
   ApolloProvider,
   createHttpLink,
@@ -29,7 +29,7 @@ const authLink = setContext((_, { headers }) => {
   };
 });
 
-const client = new AppolloClient({
+const client = new ApolloClient({
   link: authLink.concat(httpLink),
   cache: new InMemoryCache(),
 });

@@ -35,33 +35,25 @@ npm install
 
 ## Usage
 
-After installing all the npm packages, run the command:
+After installing all the npm packages, run the command
 
 ```
 npm run develop
 ```
 
-#### Heroku Deployment
-
-- Create a Heroku app: 
+To deploy to Heroku:
 
 ```
 heroku create
 ```
 
-- Create a MongoDB Atlas database:
-
-``` 
+```
 Cluster -> Collections -> Create Database
 ```
 
-- Change Heroku settings:
-
 ```
-Config Vars -> Key: MONGODB_URI -> Value: (from Cluster connect, change database name and password)
+Config vars -> Key: MongoDB_URI -> Value: (change password and database name from cluster connect)
 ```
-
-- Git push:
 
 ```
 git push heroku main
